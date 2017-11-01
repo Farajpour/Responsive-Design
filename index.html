@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> TeamWork </title>
+
+    <link rel="stylesheet" href="./bower_components/foundation/css/normalize.min.css">
+    <link rel="stylesheet" href="./bower_components/foundation/css/foundation.min.css">
+    <link rel="stylesheet" href="./bower_components/owl.carousel/css/owl.crousel.css">
+    <link rel="stylesheet" href="./bower_components/owl.carousel/css/owl.theme.css">
+    <link rel="stylesheet" href="./bower_components/orbit/orbit-1.3.0.css">    
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <!-- Div for Change Background Style and Hidden Menubar on All Device -->
+    <div class="modal" id="modal-event" onclick="modalEvent()"></div>
+    <div class="hidde-mobile-nav" id="nav-event" onclick="navEvent()"></div>
+
+    <!-- Header Menu -->
+    <div class="row fullwidth">
+        <header class="header">
+            <div class="large-4 medium-4 columns header-logo">
+                <a href="#">
+                    <img class="header-logo__image" src="./images/semantic.svg" alt="Logo">
+                </a>
+            </div>
+            <a class="header-toggle__icon" onclick="mobileNav()">&#9776;</a>
+            <nav class="large-8 medium-8 columns header-menu header-toggle" id="toggleClick">
+                <ul class="header-menu__unorderlist">
+                    <li class="header-menu__item">
+                        <a class="header-menu__link" href="./index.html"> Home </a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a class="header-menu__link" href="./contact.html"> Contant </a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a class="header-menu__link" href="./blog.html"> Blog Post </a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a class="header-menu__link active" href="#" onclick="loginNav()"> Signup </a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a class="header-menu__link" href="#"> Careers </a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a class="header-menu__link" href="#"> About Us </a>
+                    </li>
+                </ul>
+            </nav>  
+        </header>        
+    </div>
+    
+    <!-- Login Box and Success Box -->
+    <div class="row fullwidth">
+        <div class="login-box" id="login-event-show">
+            <div class="row collapse expanded" id="login-event-hidden">
+                <div class="small-12 medium-6 column small-order-2 medium-order-1">
+                <div class="login-box-form-section">
+                    <div class="login-box__background">
+                        <img class="login-box__image" src="./images/hire.svg" alt="">
+                    </div>
+                    <h1 class="login-box__title">Sign up</h1>
+                    <div  class="login-box__text">
+                        <p>
+                            Lorem Ipsum is simply
+                            Lorem Ipsum is simply                    
+                        </p>    
+                    </div>
+                    <input class="login-box-input" id="login-input" type="email" name="email" placeholder="E-mail" />
+                    <input class="login-box-input" type="password" name="password" placeholder="Password" />
+                    <input class="login-box-submit-button" type="submit" name="signup_submit" value="Sign me up" onclick="validateForm()" />
+                </div>
+                </div>
+                <div class="small-12 medium-6 column small-order-1 medium-order-2 login-box-social-section">
+                <div class="login-box-social-section-inner">
+                </div>
+                </div>
+            </div>
+            <div class="login-success" id="login-event-success">
+                <div class="login-success__item">
+                    <span class="login-success__span">&#10003;</span>
+                </div>
+                <div class="login-success__content">
+                    <h3 class="login-success__header"> Login Success </h3>
+                    <p class="login-success__text">
+                        Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industry's
+                        Lorem Ipsum is simply dummy text of the printing and 
+                    </p>
+                </div>
+                <div>
+                    <button class="login-success__button" onclick="successEventHidden()">Back to site</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <!-- Background Image -->
+    <div class="row fullwidth">
+        <section class="main-background"></section>
+        <section class="main-banner">
+            <div class="large-3 medium-3 columns main-banner__item">
+                <img class="main-banner__image" src="./images/find.svg" alt="FIND">
+                <a href="#"><h2 class="main-banner__head">FIND</h2></a>
+                <p class="main-banner__text">
+                    Lorem Ipsum is simply dummy text of the printing and 
+                    typesetting industry. Lorem Ipsum has been the industry's 
+                    standard
+                </p>
+            </div>
+            <div class="large-3 medium-3 columns main-banner__item">
+                <img class="main-banner__image" src="./images/hire.svg" alt="HIRE">
+                <a href="#"><h2 class="main-banner__head">HIRE</h2></a>
+                <p class="main-banner__text">
+                    Lorem Ipsum is simply dummy text of the printing and 
+                    typesetting industry. Lorem Ipsum has been the industry's 
+                    standard
+                </p>
+            </div>
+            <div class="large-3 medium-3 columns main-banner__item">
+                <img class="main-banner__image" src="./images/work.svg" alt="WORK">
+                <a href="#"><h2 class="main-banner__head">WORK</h2></a>
+                <p class="main-banner__text">
+                    Lorem Ipsum is simply dummy text of the printing and 
+                    typesetting industry. Lorem Ipsum has been the industry's 
+                    standard
+                </p>
+            </div>
+            <div class="large-3 medium-3 columns main-banner__item">
+                <img class="main-banner__image" src="./images/pay.svg" alt="PAY">
+                <a href="#"><h2 class="main-banner__head">PAY</h2></a>
+                <p class="main-banner__text">
+                    Lorem Ipsum is simply dummy text of the printing and 
+                    typesetting industry. Lorem Ipsum has been the industry's 
+                    standard
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <!-- First Slider -->
+    <div class="row fullwidth">
+        <section class="slide">
+            <div class="slide-top">
+                <h1 class="slide-top__head"> COMING SOON </h1>                    
+            </div>
+            <div id="owl-first" class="owl-carousel">
+                <div class="slide-center">
+                    <img class="slide-center__content" src="./images/Brand1.jpg" alt="">
+                    <h2 class="slide-center__head"> CORE </h2>
+                    <p class="slide-center__text">
+                        Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industry's
+                    </p>
+                </div>
+                <div class="slide-center">
+                    <img class="slide-center__content" src="./images/Brand1.jpg" alt="">
+                    <h2 class="slide-center__head"> CORE </h2>
+                    <p class="slide-center__text">
+                        Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industry's
+                    </p>
+                </div>
+                <div class="slide-center">
+                    <img class="slide-center__content" src="./images/Brand1.jpg" alt="">
+                    <h2 class="slide-center__head"> CORE </h2>
+                    <p class="slide-center__text">
+                        Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industry's
+                    </p>
+                </div>
+                <div class="slide-center">
+                    <img class="slide-center__content" src="./images/Brand2.jpg" alt="">
+                    <h2 class="slide-center__head"> PORONTO </h2>
+                    <p class="slide-center__text">
+                        Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industry's
+                    </p>
+                </div>
+                <div class="slide-center">
+                    <img class="slide-center__content" src="./images/Brand2.jpg" alt="">
+                    <h2 class="slide-center__head"> PORONTO </h2>
+                    <p class="slide-center__text">
+                        Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industry's
+                    </p>
+                </div>
+                <div class="slide-center">
+                    <img class="slide-center__content" src="./images/Brand2.jpg" alt="">
+                    <h2 class="slide-center__head"> PORONTO </h2>
+                    <p class="slide-center__text">
+                        Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industry's
+                    </p>
+                </div>
+                <div class="slide-center">
+                    <img class="slide-center__content" src="./images/Brand1.jpg" alt="">
+                    <h2 class="slide-center__head"> CORE </h2>
+                    <p class="slide-center__text">
+                        Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industry's
+                    </p>
+                </div>
+                <div class="slide-center">
+                    <img class="slide-center__content" src="./images/Brand1.jpg" alt="">
+                    <h2 class="slide-center__head"> CORE </h2>
+                    <p class="slide-center__text">
+                        Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industry's
+                    </p>
+                </div>
+                <div class="slide-center">
+                    <img class="slide-center__content" src="./images/Brand1.jpg" alt="">
+                    <h2 class="slide-center__head"> CORE </h2>
+                    <p class="slide-center__text">
+                        Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industry's
+                    </p>
+                </div> 
+            </div>
+            <div class="slide-footer">
+                <button class="slide-footer__button"> Show More </button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Phone Animation -->
+    <div class="row fullwidth">
+        <section class="phone-animat">
+            <div class="large-6 medium-6 columns phone-animat__title">
+                <h2 class="phone-animat__head" > How To Download For Mobile </h2>
+                <p class="phone-animat__text"> 
+                    Lorem Ipsum is simply dummy text<br>
+                    of the printing and typesetting industry
+                </p>
+                <button class="phone-animat__button"> DOWNLOAD </button>
+            </div>
+            <div class="large-6 medium-6 columns phone-animat__showphone">
+                <img class="phone-animat__gif" src="./images/Adding-a-task.gif" alt="phone">
+            </div>
+        </section>
+    </div>
+
+    <!-- Second Slider -->
+    <div class="row fullwidth">
+        <section class="slide">
+            <div class="slide-top">
+                <h1 class="slide-top__head"> PERSON PROFILE </h1>                    
+            </div>
+            <div class="slide-middle">
+                <p class="slide-middle__text"> Lorem Ipsum is simply dummy text </p>
+                <p class="slide-middle__text"> Lorem Ipsum is simply dummy text </p>
+            </div>
+            <div id="owl-second" class="owl-carousel">
+                <div class="second slide-center">
+                    <img class="slide-center__content" src="./images/michael howie.jpg" alt="">
+                    <h2 class="slide-center__head"> Michael Howie </h2>
+                    <p class="slide-center__text">
+                        Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industry's
+                    </p>
+                </div>
+                <div class="second slide-center">
+                    <img class="slide-center__content" src="./images/elexa styan.jpg" alt="">
+                    <h2 class="slide-center__head"> Elexa Styan </h2>
+                    <p class="slide-center__text">
+                        Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industry's
+                    </p>
+                </div>
+                <div class="second slide-center">
+                    <img class="slide-center__content" src="./images/rich ward.jpg" alt="">
+                    <h2 class="slide-center__head"> Rich Ward </h2>
+                    <p class="slide-center__text">
+                        Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industry's
+                    </p>
+                </div>
+                <div class="second slide-center">
+                    <img class="slide-center__content" src="./images/michael howie.jpg" alt="">
+                    <h2 class="slide-center__head"> Michael Howie </h2>
+                    <p class="slide-center__text">
+                        Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industry's
+                    </p>
+                </div>
+                <div class="second slide-center">
+                    <img class="slide-center__content" src="./images/elexa styan.jpg" alt="">
+                    <h2 class="slide-center__head"> Elexa Styan </h2>
+                    <p class="slide-center__text">
+                        Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industry's
+                    </p>
+                </div>
+                <div class="second slide-center">
+                    <img class="slide-center__content" src="./images/rich ward.jpg" alt="">
+                    <h2 class="slide-center__head"> Rich Ward </h2>
+                    <p class="slide-center__text">
+                        Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industry's
+                    </p>
+                </div>
+                <div class="second slide-center">
+                    <img class="slide-center__content" src="./images/michael howie.jpg" alt="">
+                    <h2 class="slide-center__head"> Michael Howie </h2>
+                    <p class="slide-center__text">
+                        Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industry's
+                    </p>
+                </div>
+                <div class="second slide-center">
+                    <img class="slide-center__content" src="./images/elexa styan.jpg" alt="">
+                    <h2 class="slide-center__head"> Elexa Styan </h2>
+                    <p class="slide-center__text">
+                        Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industry's
+                    </p>
+                </div>
+                <div class="second slide-center">
+                    <img class="slide-center__content" src="./images/rich ward.jpg" alt="">
+                    <h2 class="slide-center__head"> Rich Ward </h2>
+                    <p class="slide-center__text">
+                        Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industry's
+                    </p>
+                </div>                
+            </div>
+        </section>
+    </div>
+
+    <!-- Last Slider -->
+    <div class="row fullwidth footer">
+        <div id="responsive">
+            <div class="footer-slider">
+                <img class="footer-slider__image" src="./images/foundation-logo.svg" alt="foundation">
+                <h2 class="footer-slider__head"> Foundation </h2>
+                <p class="footer-slider__p"> Lorem Ipsum is simply dummy text </p>
+                <p class="footer-slider__p"> Lorem Ipsum is simply dummy text </p>                
+            </div>
+            <div class="footer-slider">
+                <img class="footer-slider__image" src="./images/foundation-logo.svg" alt="foundation">
+                <h2 class="footer-slider__head"> Foundation </h2>
+                <p class="footer-slider__p"> Lorem Ipsum is simply dummy text </p>
+                <p class="footer-slider__p"> Lorem Ipsum is simply dummy text </p>                
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./bower_components/foundation/js/vendor/modernizr.js"></script>
+    <script src="./bower_components/foundation/js/vendor/jquery.js"></script>
+    <script src="./bower_components/owl.carousel/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./bower_components/orbit/jquery.orbit-1.3.0.js"></script>
+    <script src="./bower_components/owl.carousel/js/owl.carousel.js"></script>
+    <script src="./bower_components/foundation/js/foundation.min.js"></script>
+    <script src="./bower_components/foundation/js/foundation/foundation.orbit.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> TeamWork </title>
+
+    <link rel="stylesheet" href="./bower_components/foundation/css/foundation.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <!-- Div for Change Background Style and Hidden Menubar on All Device -->
+    <div class="modal" id="modal-event" onclick="modalEvent()"></div>
+    <div class="hidde-mobile-nav" id="nav-event" onclick="navEvent()"></div>
+    <!-- Header Menu -->
+    <div class="row fullwidth">
+        <header class="header">
+            <div class="large-4 medium-4 columns header-logo">
+                <a href="#">
+                    <img class="header-logo__image" src="./images/semantic.svg" alt="Logo">
+                </a>
+            </div>
+            <a class="header-toggle__icon" onclick="mobileNav()">&#9776;</a>
+            <nav class="large-8 medium-8 columns header-menu header-toggle" id="toggleClick">
+                <ul class="header-menu__unorderlist">
+                    <li class="header-menu__item">
+                        <a class="header-menu__link" href="./index.html"> Home </a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a class="header-menu__link" href="./contact.html"> Contant </a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a class="header-menu__link" href="./blog.html"> Blog Post </a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a class="header-menu__link active" href="#" onclick="loginNav()"> Signup </a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a class="header-menu__link" href="#"> Careers </a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a class="header-menu__link" href="#"> About Us </a>
+                    </li>
+                </ul>
+            </nav>  
+        </header>        
+    </div>
+    <!-- Login Box and Success Box -->
+    <div class="row fullwidth">
+        <div class="login-box" id="login-event-show">
+            <div class="row collapse expanded" id="login-event-hidden">
+                <div class="small-12 medium-6 column small-order-2 medium-order-1">
+                <div class="login-box-form-section">
+                    <div class="login-box__background">
+                        <img class="login-box__image" src="./images/hire.svg" alt="">
+                    </div>
+                    <h1 class="login-box__title">Sign up</h1>
+                    <div  class="login-box__text">
+                        <p>
+                            Lorem Ipsum is simply
+                            Lorem Ipsum is simply                    
+                        </p>    
+                    </div>
+                    <input class="login-box-input" type="email" name="email" placeholder="E-mail" />
+                    <input class="login-box-input" type="password" name="password" placeholder="Password" />
+                    <input class="login-box-submit-button" type="submit" name="signup_submit" value="Sign me up" onclick="successEventShow()" />
+                </div>
+                </div>
+                <div class="small-12 medium-6 column small-order-1 medium-order-2 login-box-social-section">
+                <div class="login-box-social-section-inner">
+                </div>
+                </div>
+            </div>
+            <div class="login-success" id="login-event-success">
+                <div class="login-success__item">
+                    <span class="login-success__span">&#10003;</span>
+                </div>
+                <div class="login-success__content">
+                    <h3 class="login-success__header"> Login Success </h3>
+                    <p class="login-success__text">
+                        Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industry's
+                        Lorem Ipsum is simply dummy text of the printing and 
+                    </p>
+                </div>
+                <div>
+                    <button class="login-success__button" onclick="successEventHidden()">Back to site</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- Blog Box -->
+    <div class="row fullwidth">
+        <section class="blog-background"></section>
+        <section class="blog">
+            <div class="larg-8 medium-8 columns blog-mainpost" >
+                <h2 class="blog-mainpost__header"> Subheader </h2>
+                <p class="blog-mainpost__text" >
+                    Lorem Ipsum is simply dummy text of the printing and 
+                    typesetting industry. Lorem Ipsum has been the industry's 
+                    standard Lorem Ipsum is simply dummy text of the printing and 
+                    typesetting industry. Lorem Ipsum has been the industry's 
+                    standard Lorem Ipsum is simply dummy text of the printing and 
+                    typesetting industry. Lorem Ipsum has been the industry's 
+                    standard Lorem Ipsum is simply dummy text of the printing and 
+                    typesetting industry. Lorem Ipsum has been the industry's 
+                    standard Lorem Ipsum is simply dummy text of the printing and 
+                    typesetting industry. Lorem Ipsum has been the industry's 
+                    standard Lorem Ipsum is simply dummy text of the printing and 
+                    typesetting industry. Lorem Ipsum has been the industry's 
+                    standard Lorem Ipsum is simply dummy text of the printing and 
+                    typesetting industry. Lorem Ipsum has been the industry's 
+                    standard Lorem Ipsum is simply dummy text of the printing and 
+                    typesetting industry. Lorem Ipsum has been the industry's 
+                    standard Lorem Ipsum is simply dummy text  
+                </p>
+                <img class="blog-mainpost__image" src="./images/bl6.jpeg" alt="">
+            </div>
+            <div class="larg-4 medium-4 columns blog-item" >
+                <div class="blog-item__content">
+                    <img class="blog-item__image" src="./images/bl5.jpg" alt="">
+                    <a href="#">
+                        <h3 class="blog-item__header"> Subheader </h3>
+                    </a>    
+                    <p class="blog-item__text">
+                        Lorem Ipsum is simply dummy text
+                        Lorem Ipsum is simply dummy text 
+                         
+                    </p>
+                </div>
+                <div class="blog-item__content">
+                    <img class="blog-item__image" src="./images/bl1.jpeg" alt="">
+                    <a href="#">
+                        <h3 class="blog-item__header"> Subheader </h3>
+                    </a>    
+                    <p class="blog-item__text">
+                        Lorem Ipsum is simply dummy text
+                        Lorem Ipsum is simply dummy text 
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+
+
+
+
+    <script src="./bower_components/foundation/js/vendor/jquery.js"></script>
+    <script src="./bower_components/foundation/js/foundation.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
